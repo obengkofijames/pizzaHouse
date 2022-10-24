@@ -15,7 +15,7 @@ Route::get('/', function () {
 
 
 // pizza routes
-Route::get('/pizzas',[PizzaController::class, "indexx"])-> middleware('auth');
+Route::get('/pizzas',[PizzaController::class, "index"])-> middleware('auth');
 // Route::get('/pizzas',"App\Http\Controllers\PizzaController@index"); --- or this without the namespace
 
 Route::get('/pizzas/create',[PizzaController::class, "create"]);

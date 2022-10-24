@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class PizzaController extends Controller
 {
-    public function indexx(){
+    public function index(){
         // $pizza = [
         //     ["name" => "frank", "base" => 17, "type" => "it is frank"],
         //     ["name" => "james", "base" => 17, "type" => "it is james"],
@@ -17,7 +17,7 @@ class PizzaController extends Controller
         // $pizzas = Pizza::orderBy("name","desc")->get();
         // $pizzas = Pizza::where("type","hawaiian")->get();
         $pizzas = Pizza:: all();  
-        return view('pizzas.indexx', ["pizzas" => $pizzas]);
+        return view('pizzas.index', ["pizzas" => $pizzas]);
         
     }
 
